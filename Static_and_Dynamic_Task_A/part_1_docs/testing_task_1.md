@@ -26,16 +26,16 @@ class CardGame:
 
   dif highest_card(self, card1 card2): #def misspelt. Also, need a comma to seperate parameters (card1, card2)
   if card1.value > card2.value: #if bock requires indentation
-    return card
+    return card #variable returned should be 'card1'
   else:
     return card2
   
 
 
 def cards_total(self, cards): #def requires indentation
-  total
+  total #total needs to be initialised (total = 0)
   for card in cards:
     total += card.value
-    return "You have a total of" + total
+    return "You have a total of" + total #total needs to be converted to string type before concatenation ( str(total) ). Also, return statment needs to be unindented to take it out of the for loop. Also, possible bug: require space at end of string ("...total of ")
   
 ```
